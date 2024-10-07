@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rick and Morty Characters</title>
+
+</head>
+
+<body>
+    <div class="mobile-message">
+        <p>&copy; 2024 Rick and Morty Characters. This project is a student project intended for educational purposes only and will not be sold. <br> All rights to the content belong to the original creators and the Rick and Morty API. No copyright infringement is intended.</p>
+    </div>
+    
+    <!-- Banner principal -->
+    <img id="logo-banner" src="img/logo.png" alt="Banner principal">
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Search character name:" required>
+        <select id="status-filter">
+            <option value="">All Stats</option>
+            <option value="alive">Alive</option>
+            <option value="dead">Died</option>
+            <option value="unknown">Unknown</option>
+        </select>
+        <button type="submit">Search</button>
+    </form>
+
+    <!-- Switch para Cambiar Tema -->
+    <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+    </label>
+
+    <main></main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
